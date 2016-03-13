@@ -10,8 +10,10 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <form method="post">
+        Username: <input type="text" name="username" />
+        Password: <input type="text" name="password" />
+        <input type="submit" value="LogIn" />
+        </form>
     </body>
 </html>
