@@ -7,6 +7,7 @@
     </head>
     <body>
         <form method="post">
+            <div class="col-md-2">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="input-group">
@@ -20,6 +21,7 @@
                     </div>
                     <button type="submit" class="btn btn-default">Login</button>
                 </div>
+            </div>
             </div>
         </form>
     </body>
