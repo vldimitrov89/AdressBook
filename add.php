@@ -11,7 +11,7 @@
          $phone = trim($_POST['phone']);
          if(strlen($name)>3 && strlen($email)>5)
          {
-             $tmp='name:'.$name.';email:'.$email.';phone:'.$phone.';';
+             $tmp="name:{$name};email:{$email};phone:{$phone};";
              file_put_contents('data.txt', $tmp."\r\n",FILE_APPEND);
              echo 'Data saved!';
          }
