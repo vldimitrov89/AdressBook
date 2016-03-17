@@ -1,7 +1,9 @@
 <?php
  session_start();
- if ($_SESSION['is_Logged']==true)
+ if ($_SESSION['is_Logged'] !=true)
  {
+    header('Location: index.php');
+ }
      if($_POST['formSubmit']==1)
      {
          $name = trim($_POST['name']);
@@ -27,8 +29,3 @@
     <input type="submit" value="Add" />
 </form>
 <?php
- }
-else
-{
-     header('Location: index.php');
-}
