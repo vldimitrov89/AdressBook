@@ -7,21 +7,14 @@ echo "<table border='1'>"
  . "<tr><td>Name</td><td>Email</td><td>Phone</td></tr>";
 
 foreach ($people as $value) {
+ echo "<tr>";
     $tmp = explode(';', $value);
     foreach ($tmp as $v) {
         $tmp2 = explode(':', $v);
-        if ($tmp2[0] == 'name') {
-            $name = $tmp2[1];
-        } elseif ($tmp2[0] == 'email') {
-            $email = $tmp2[1];
-        } elseif ($tmp2[0] == 'phone') {
-            $phone = $tmp2[1];
-        }
-        
+        echo "<td>" . end($tmp2) . "</td>";
     }
-    echo "<tr><td>" . $name . "</td><td>" . $email . "</td><td>" . $phone . "</td></tr>";
+ echo "</tr>";
 }
-
 echo "</table>";
 
 
