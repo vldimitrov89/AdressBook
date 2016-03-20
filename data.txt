@@ -1,3 +1,0 @@
-name:Vladimir;email:example@mail.com;phone:12345;
-name:beastboy;email:example@mail.com;phone:12345;
-name:Владимир;email:example@mail.com;phone:12345;

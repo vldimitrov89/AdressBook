@@ -2,7 +2,8 @@
  session_start();
  if ($_SESSION['is_Logged']==true)
  {
-     if($_POST['formSubmit']==1)
+     var_dump($_POST);
+     if(isset($_POST['name']))
      {
          $name = trim($_POST['name']);
          $email = trim($_POST['mail']);
@@ -20,12 +21,12 @@
      }
      ?>
 <form action="add.php" method="post">
-    <input type="hidden" name="formSubmit" value="1" />
     Name:<input type="text" name="name" /><br>
     Email:<input type="text" name="mail" /><br>
     Phone:<input type="text" name="phone" /><br>
     <input type="submit" value="Add" />
 </form>
+<a href="adressbook.php">Back</a>
 <?php
  }
 else
